@@ -78,7 +78,7 @@ Default values (if known) are in italic.
 | `BUNDLE_QT_TRANSLATIONS` | Install Qt translation files for LMMS | ON / *OFF* |
 | `CMAKE_INSTALL_PREFIX` | Install location | Some path, commonly `../target` |
 | `CMAKE_PREFIX_PATH` | Location of needed libraries | Some path |
-| `CMAKE_BUILD_TYPE` | Build type, determines the performance | `Release`, `Debug`, `RelWithDebInfo` |
+| `CMAKE_BUILD_TYPE` | Build type, determines the performance | Release, Debug, RelWithDebInfo |
 
 `R` - Required
 `*` - At least one required
