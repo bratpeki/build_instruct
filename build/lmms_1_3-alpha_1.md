@@ -42,38 +42,53 @@ In the "Use" section, the things starting with `-D` are `cmake` flags.
 
 # CMake flags
 
-The value of each option is either ON or OFF.
+Default values (if known) are in italic.
 
-| Option | Description | Default value |
+| Option | Description | Values |
 | - | - | - |
-| `WANT_ALSA` | Include ALSA (Advanced Linux Sound Architecture) support | ON |
-| `WANT_CALF` | Include CALF LADSPA plugins | ON |
-| `WANT_CAPS` | Include C* Audio Plugin Suite (LADSPA plugins) | ON |
-| `WANT_CARLA` | Include Carla plugin | ON |
-| `WANT_CMT`  |Include Computer Music Toolkit LADSPA plugins | ON |
-| `WANT_JACK` | Include JACK (Jack Audio Connection Kit) support | ON |
-| `WANT_WEAKJACK` | Loosely link JACK libraries | ON |
-| `WANT_LV2` | Include Lv2 plugins | ON |
-| `WANT_SUIL` | Include SUIL for LV2 plugin UIs | ON |
-| `WANT_MP3LAME` | Include MP3/Lame support | ON |
-| `WANT_OGGVORBIS` | Include OGG/Vorbis support | ON |
-| `WANT_PULSEAUDIO` | Include PulseAudio support | ON |
-| `WANT_PORTAUDIO` | Include PortAudio support | ON |
-| `WANT_SNDIO` | Include sndio support | ON |
-| `WANT_SOUNDIO` | Include libsoundio support | ON |
-| `WANT_SDL` | Include SDL (Simple DirectMedia Layer) support | ON |
-| `WANT_SF2` | Include SoundFont2 player plugin | ON |
-| `WANT_GIG` | Include GIG player plugin | ON |
-| `WANT_STK` | Include Stk (Synthesis Toolkit) support | ON |
-| `WANT_SWH` | Include Steve Harris's LADSPA plugins | ON |
-| `WANT_TAP` | Include Tom's Audio Processing LADSPA plugins | ON |
-| `WANT_VST` | Include VST support | ON |
-| `WANT_VST_32` | Include 32-bit VST support | ON |
-| `WANT_VST_64` | Include 64-bit VST support | ON |
-| `WANT_WINMM` | Include WinMM MIDI support | OFF |
-| `WANT_DEBUG_FPE` | Debug floating point exceptions | OFF |
-| `BUNDLE_QT_TRANSLATIONS` | Install Qt translation files for LMMS | OFF |
+| `WANT_ALSA` | Include ALSA (Advanced Linux Sound Architecture) support | *ON* / OFF |
+| `WANT_CALF` | Include CALF LADSPA plugins | *ON* / OFF |
+| `WANT_CAPS` | Include C* Audio Plugin Suite (LADSPA plugins) | *ON* / OFF |
+| `WANT_CARLA` | Include Carla plugin | *ON* / OFF |
+| `WANT_CMT`  |Include Computer Music Toolkit LADSPA plugins | *ON* / OFF |
+| `WANT_JACK` | Include JACK (Jack Audio Connection Kit) support | *ON* / OFF |
+| `WANT_WEAKJACK` | Loosely link JACK libraries | *ON* / OFF |
+| `WANT_LV2` | Include Lv2 plugins | *ON* / OFF |
+| `WANT_SUIL` | Include SUIL for LV2 plugin UIs | *ON* / OFF |
+| `WANT_MP3LAME` | Include MP3/Lame support | *ON* / OFF |
+| `WANT_OGGVORBIS` | Include OGG/Vorbis support | *ON* / OFF |
+| `WANT_PULSEAUDIO` | Include PulseAudio support | *ON* / OFF |
+| `WANT_PORTAUDIO` | Include PortAudio support | *ON* / OFF |
+| `WANT_SNDIO` | Include sndio support | *ON* / OFF |
+| `WANT_SOUNDIO` | Include libsoundio support | *ON* / OFF |
+| `WANT_SDL` | Include SDL (Simple DirectMedia Layer) support | *ON* / OFF |
+| `WANT_SF2` | Include SoundFont2 player plugin | *ON* / OFF |
+| `WANT_GIG` | Include GIG player plugin | *ON* / OFF |
+| `WANT_STK` | Include Stk (Synthesis Toolkit) support | *ON* / OFF |
+| `WANT_SWH` | Include Steve Harris's LADSPA plugins | *ON* / OFF |
+| `WANT_TAP` | Include Tom's Audio Processing LADSPA plugins | *ON* / OFF |
+| `WANT_VST` | Include VST support | *ON* / OFF |
+| `WANT_VST_32` | Include 32-bit VST support | *ON* / OFF |
+| `WANT_VST_64` | Include 64-bit VST support | *ON* / OFF |
+| `WANT_WINMM` | Include WinMM MIDI support | ON / *OFF* |
+| `WANT_DEBUG_FPE` | Debug floating point exceptions | ON / *OFF* |
+| `BUNDLE_QT_TRANSLATIONS` | Install Qt translation files for LMMS | ON / *OFF* |
+| `CMAKE_INSTALL_PREFIX` | Install location | Some path, ex. `../target` |
+| `CMAKE_PREFIX_PATH` | Location of needed libraries | Some path |
+| `CMAKE_BUILD_TYPE` | Build type, determines the performance | `Release`, `Debug`, `RelWithDebInfo` |
 
 `R` - Required
 `*` - At least one required
+
+# My build setup
+
+This is assuming we are in the `lmms` directory
+
+```sh
+
+mkdir build
+cd build
+cmake 
+
+```
 
