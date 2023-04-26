@@ -1,4 +1,4 @@
-All the compilation info is listed [here](https://github.com/LMMS/lmms/wiki/Compiling).
+All the compiling info is listed [here](https://github.com/LMMS/lmms/wiki/Compiling).
 
 This doc is subject to change so this is the summary of what it says:
 
