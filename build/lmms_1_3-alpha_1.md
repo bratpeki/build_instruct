@@ -15,7 +15,7 @@ You must have one of these:
 - `clang`
 - `mingw-w64`
 
-# Libraries:
+# Libraries
 
 In the "Use" section, the things starting with `-D` are `cmake` flags.
 
@@ -39,6 +39,40 @@ In the "Use" section, the things starting with `-D` are `cmake` flags.
 | * | `sndio` | `pacman -S sndio` | Turned off with `-DWANT_SNDIO=OFF` |
 | | `perl` | `pacman -S perl` | Compiling `swh` LADSPA plugins, turned off with `-DWANT_SWH=OFF` |
 | | `perl` `XML::Parser` | `cpan List::MoreUtils XML::Parser` | Compiling `swh` LADSPA plugins, turned off with `-DWANT_SWH=OFF` |
+
+# CMake flags
+
+Bolded options are set as default
+
+| Option | Description | Options |
+| - | - | - |
+| `WANT_ALSA` | Include ALSA (Advanced Linux Sound Architecture) support | **ON**/OFF |
+| `WANT_CALF` | Include CALF LADSPA plugins | **ON**/OFF |
+| `WANT_CAPS` | Include C* Audio Plugin Suite (LADSPA plugins) | **ON**/OFF |
+| `WANT_CARLA` | Include Carla plugin | **ON**/OFF |
+| `WANT_CMT` |  |Include Computer Music Toolkit LADSPA plugins | **ON**/OFF |
+| `WANT_JACK` | Include JACK (Jack Audio Connection Kit) support | **ON**/OFF |
+| `WANT_WEAKJACK` | Loosely link JACK libraries | **ON**/OFF |
+| `WANT_LV2` |  |Include Lv2 plugins | **ON**/OFF |
+| `WANT_SUIL` | Include SUIL for LV2 plugin UIs | **ON**/OFF |
+| `WANT_MP3LAME` | Include MP3/Lame support | **ON**/OFF |
+| `WANT_OGGVORBIS` | Include OGG/Vorbis support | **ON**/OFF |
+| `WANT_PULSEAUDIO` | Include PulseAudio support | **ON**/OFF |
+| `WANT_PORTAUDIO` | Include PortAudio support | **ON**/OFF |
+| `WANT_SNDIO` | Include sndio support | **ON**/OFF |
+| `WANT_SOUNDIO` | Include libsoundio support | **ON**/OFF |
+| `WANT_SDL` | Include SDL (Simple DirectMedia Layer) support | **ON**/OFF |
+| `WANT_SF2` | Include SoundFont2 player plugin | **ON**/OFF |
+| `WANT_GIG` | Include GIG player plugin | **ON**/OFF |
+| `WANT_STK` | Include Stk (Synthesis Toolkit) support | **ON**/OFF |
+| `WANT_SWH` | Include Steve Harris's LADSPA plugins | **ON**/OFF |
+| `WANT_TAP` | Include Tom's Audio Processing LADSPA plugins | **ON**/OFF |
+| `WANT_VST` | Include VST support | **ON**/OFF |
+| `WANT_VST_32` | Include 32-bit VST support | **ON**/OFF |
+| `WANT_VST_64` | Include 64-bit VST support | **ON**/OFF |
+| `WANT_WINMM` | Include WinMM MIDI support | ON/**OFF** |
+| `WANT_DEBUG_FPE` | Debug floating point exceptions | ON/**OFF** |
+| `BUNDLE_QT_TRANSLATIONS` | Install Qt translation files for LMMS | ON/**OFF** |
 
 `R` - Required
 `*` - At least one required
