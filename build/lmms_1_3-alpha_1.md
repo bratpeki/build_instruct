@@ -87,15 +87,14 @@ Default values (if known) are in italic.
 
 ## Plugins
 
-I have not tested this.
-
-It seems that you specify the name as a set of words delimited by underscores,
+It seems that you specify the name as
+a set of lowercase-lettered words delimited by underscores,
 ex. `audio_file_processor`,
 despite the actual name of the folder being `AudioFileProcessor`.
 
 Someone should give this a shot.
 
-The list is given below:
+I have not tested this, and can only give you **a list of folder names**!
 
 - `Amplifier`
 - `AudioFileProcessor`
