@@ -17,23 +17,26 @@ You must have one of these:
 
 # Libraries:
 
-| Required | Name (Version) | Description | Installation |
+| Type | Name (Version) | Description | Installation |
 | - | - | - | - |
-| Y | `Qt5` (>=5.6) | GUI toolkit | `pacman -S qt5-x11extras qt5-tools` |
-| Y | `libsndfile` (>=1.0.26) | Reading and writing sound files | `pacman -S libsndfile` |
-| Y | `fftw3` | TODO | TODO |
-| Y | `libsamplerate` | TODO | TODO |
-| | `libvorbis` | TODO | TODO |
-| | `libogg` | TODO | TODO |
-| | `wine` | TODO | TODO |
-| | `libstk` | TODO | TODO |
-| | `libfluidsynth` | TODO | TODO |
-| | `fltk` | TODO | TODO |
-| | `jack` | TODO | TODO |
-| | `sdl` | TODO | TODO |
-| | `alsa` | TODO | TODO |
-| | `libportaudio` | TODO | TODO |
-| | `libsoundio` | TODO | TODO |
-| | `perl` | TODO | TODO |
-| | `perl` `XML::Parser` | TODO | TODO |
+| R | `Qt5` (>=5.6) | GUI toolkit | `pacman -S qt5-x11extras qt5-tools` |
+| R | `libsndfile` (>=1.0.26) | Reading and writing sound files | `pacman -S libsndfile` |
+| R | `fftw3` | Fast fourier transform computing library | `pacman -S fftw` |
+| R | `libsamplerate` | Sample rate convertor | `pacman -S libsamplerate` |
+| | `libvorbis` | Vorbis file format family library | `pacman -S libvorbis` |
+| | `libogg` | OGG Vorbis library | `pacman -S libogg` |
+| | `wine` | VST support wrapper | `pacman -S wine` |
+| | `libstk` | Synthesis ToolKit | `pacman -S stk` |
+| | `libfluidsynth` | SoundFont (2) player | `pacman -S fluidsynth` |
+| | `fltk` | X GUI | `pacman -S fltk` |
+| | `jack` | JACK Audio Connection Kit | `pacman -S jack2` or `pacman -S pipewire-jack` |
+| * | `sdl` | Simple DirectMedia Library | `pacman -S sdl sdl-openglhq sdl-nokbgrab sdl-openglhq-nokbgrab sdl-git sdl2_compat12-git sdl12-compat-git sdl12-compat` |
+| * | `alsa` | Advanced Linux Sound Architecture | `pacman -S alsa-lib alsa-firmware`, if you're on PipeWire add `pipewire-alsa` |
+| * | `libportaudio` | Audio interface library | `pacman -S portaudio` |
+| * | `libsoundio` | Audio interface library | `pacman -S libsoundio` |
+| | `perl` | Programming language | `pacman -S perl` |
+| | `perl` `XML::Parser` | Perl library | `cpan XML::Parser` |
+
+`R` - Required
+`*` - At least one required
 
