@@ -1,11 +1,10 @@
-
 All the compilation info is listed [here](https://github.com/LMMS/lmms/wiki/Compiling).
 
 This doc is subject to change so this is the summary of what it says:
 
 # Build system
 
-You must have `cmake` (>3.3.0).
+You must have `cmake` (>3.3.0) and `cmake-extra-modules`.
 
 # Compilers
 
@@ -22,23 +21,27 @@ In the "Use" section, the things starting with `-D` are `cmake` flags.
 | Type | Name (Version) | Installation | Use |
 | - | - | - | - |
 | R | `Qt5` (>=5.6) | `pacman -S qt5-x11extras qt5-tools` | Graphics |
-| R | `libsndfile` (>=1.0.26) | `pacman -S libsndfile` | Audio |
 | R | `fftw3` | `pacman -S fftw` | Computation |
 | R | `libsamplerate` | `pacman -S libsamplerate` | Audio |
-| | `libvorbis` | `pacman -S libvorbis` | OGG/Vorbis support, turned off with `-DWANT_OGGVORBIS=OFF` |
-| | `libogg` | `pacman -S libogg` | OGG/Vorbis support, turned off with `-DWANT_OGGVORBIS=OFF` |
-| | `wine` | `pacman -S wine` | VST support, turned off with `-DWANT_VST=OFF -DWANT_VST_32=OFF -DWANT_VST_64=OFF` |
-| | `libstk` | `pacman -S stk` | Audio processing, turned off with `-DWANT_STK=OFF` |
-| | `libfluidsynth` | `pacman -S fluidsynth` | SoundFont playing, turned off with `-DWANT_SF2=OFF` |
-| | `fltk` | `pacman -S fltk` | Needed for `ZynAddSubFx`, `cmake` will check for it |
-| | `jack` | `pacman -S jack2` or `pacman -S pipewire-jack` | Turned off with `-DWANT_JACK=OFF` |
-| * | `sdl` | `pacman -S sdl sdl-openglhq sdl-nokbgrab sdl-openglhq-nokbgrab sdl-git sdl2_compat12-git sdl12-compat-git sdl12-compat` | Turned off with `-DWANT_SDL=OFF` |
-| * | `alsa` | `pacman -S alsa-lib alsa-firmware`, if you're on PipeWire add `pipewire-alsa` | Turned off with `-DWANT_ALSA=OFF` |
+| R | `libsndfile` (>=1.0.26) | `pacman -S libsndfile` | Audio |
+| * | `ALSA` | `pacman -S alsa-lib alsa-firmware`, if you're on PipeWire add `pipewire-alsa` | Turned off with `-DWANT_ALSA=OFF` |
+| * | `SDL` | `pacman -S sdl sdl-openglhq sdl-nokbgrab sdl-openglhq-nokbgrab sdl-git sdl2_compat12-git sdl12-compat-git sdl12-compat` | Turned off with `-DWANT_SDL=OFF` |
 | * | `libportaudio` | `pacman -S portaudio` | Turned off with `-DWANT_PORTAUDIO=OFF` |
 | * | `libsoundio` | `pacman -S libsoundio` | Turned off with `-DWANT_SOUNDIO=OFF` |
 | * | `sndio` | `pacman -S sndio` | Turned off with `-DWANT_SNDIO=OFF` |
-| | `perl` | `pacman -S perl` | Compiling `swh` LADSPA plugins, turned off with `-DWANT_SWH=OFF` |
-| | `perl` `XML::Parser` | `cpan List::MoreUtils XML::Parser` | Compiling `swh` LADSPA plugins, turned off with `-DWANT_SWH=OFF` |
+| | `Carla` | `pacman -S carla` | Carla support, turned off with `-DWANT_CARLA=OFF` |
+| | `FLTK` | `pacman -S fltk` | Needed for `ZynAddSubFx`, `cmake` will check for it |
+| | `JACK` | `pacman -S jack2` or `pacman -S pipewire-jack` | Turned off with `-DWANT_JACK=OFF` |
+| | `LADSPA` | `pacman -S ladspa` | LADSPA plugin support, if you don't want it, turn off all LADPSA plguins in the `cmake` flags |
+| | `Perl` `XML::Parser` | `cpan List::MoreUtils XML::Parser` | Compiling `swh` LADSPA plugins, turned off with `-DWANT_SWH=OFF` |
+| | `Perl` | `pacman -S perl` | Compiling `swh` LADSPA plugins, turned off with `-DWANT_SWH=OFF` |
+| | `freetype2` | `pacman -S freetype2` | Font rasterization |
+| | `libfluidsynth` | `pacman -S fluidsynth` | SoundFont playing, turned off with `-DWANT_SF2=OFF` |
+| | `libgig` | `pacman -S libgig` | GIG support, turned off with `-DWANT_GIG=OFF` |
+| | `libogg` | `pacman -S libogg` | OGG/Vorbis support, turned off with `-DWANT_OGGVORBIS=OFF` |
+| | `libstk` | `pacman -S stk` | Audio processing, turned off with `-DWANT_STK=OFF` |
+| | `libvorbis` | `pacman -S libvorbis` | OGG/Vorbis support, turned off with `-DWANT_OGGVORBIS=OFF` |
+| | `wine` | `pacman -S wine` | VST support, turned off with `-DWANT_VST=OFF -DWANT_VST_32=OFF -DWANT_VST_64=OFF` |
 
 # CMake flags
 
@@ -82,13 +85,10 @@ Default values (if known) are in italic.
 
 # My build setup
 
-This is assuming we are in the `lmms` directory
+This is assuming we are in the `lmms` directory.
 
 ```sh
-
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=../target -DCMAKE_PREFIX_PATH=/usr/lib/wine
-
 ```
-
