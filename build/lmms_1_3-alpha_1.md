@@ -79,9 +79,76 @@ Default values (if known) are in italic.
 | `CMAKE_INSTALL_PREFIX` | Install location | Some path, commonly `../target` |
 | `CMAKE_PREFIX_PATH` | Location of needed libraries | Some path |
 | `CMAKE_BUILD_TYPE` | Build type, determines the performance | Release, Debug, RelWithDebInfo |
+| `PLUGIN_LIST` | Limit build only to the specified [plugins](./lmms_1_3-alpha_1.md#plugins) | ex. `"audio_file_processor kicker triple_oscillator"` |
+| `LMMS_MINIMAL` | Similar to `PLUGIN_LIST`, although is keeps only the most essential plguins | *True* / False |
 
-`R` - Required
+`R` - Required<br>
 `*` - At least one required
+
+## Plugins
+
+I have not tested this.
+
+It seems that you specify the name as a set of words delimited by underscores,
+ex. `audio_file_processor`,
+despite the actual name of the folder being `AudioFileProcessor`.
+
+Someone should give this a shot.
+
+The list is given below:
+
+- `Amplifier`
+- `AudioFileProcessor`
+- `BassBooster`
+- `BitInvader`
+- `Bitcrush`
+- `CarlaBase`
+- `CarlaPatchbay`
+- `CarlaRack`
+- `Compressor`
+- `CrossoverEQ`
+- `Delay`
+- `Dispersion`
+- `DualFilter`
+- `DynamicsProcessor`
+- `Eq`
+- `Flanger`
+- `FreeBoy`
+- `GigPlayer`
+- `HydrogenImport`
+- `Kicker`
+- `LadspaBrowser`
+- `LadspaEffect`
+- `Lb302`
+- `Lv2Effect`
+- `Lv2Instrument`
+- `MidiExport`
+- `MidiImport`
+- `Monstro`
+- `MultitapEcho`
+- `Nes`
+- `OpulenZ`
+- `Organic`
+- `Patman`
+- `PeakControllerEffect`
+- `ReverbSC`
+- `Sf2Player`
+- `Sfxr`
+- `Sid`
+- `SpectrumAnalyzer`
+- `StereoEnhancer`
+- `StereoMatrix`
+- `Stk`
+- `TripleOscillator`
+- `Vectorscope`
+- `Vestige`
+- `Vibed`
+- `VstBase`
+- `VstEffect`
+- `Watsyn`
+- `WaveShaper`
+- `Xpressive`
+- `ZynAddSubFx`
 
 # My build setup
 
@@ -91,4 +158,6 @@ This is assuming we are in the `lmms` directory.
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=../target -DCMAKE_PREFIX_PATH=/usr/lib/wine
+make # you could specify the number of jobs at once, ex. make -j4
+make install # installs to the directory pointed to by CMAKE_INSTALL_PREFIX, you uninstall with make uninstall
 ```
