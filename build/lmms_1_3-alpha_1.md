@@ -50,10 +50,10 @@ Bolded options are set as default
 | `WANT_CALF` | Include CALF LADSPA plugins | **ON**/OFF |
 | `WANT_CAPS` | Include C* Audio Plugin Suite (LADSPA plugins) | **ON**/OFF |
 | `WANT_CARLA` | Include Carla plugin | **ON**/OFF |
-| `WANT_CMT` |  |Include Computer Music Toolkit LADSPA plugins | **ON**/OFF |
+| `WANT_CMT`  |Include Computer Music Toolkit LADSPA plugins | **ON**/OFF |
 | `WANT_JACK` | Include JACK (Jack Audio Connection Kit) support | **ON**/OFF |
 | `WANT_WEAKJACK` | Loosely link JACK libraries | **ON**/OFF |
-| `WANT_LV2` |  |Include Lv2 plugins | **ON**/OFF |
+| `WANT_LV2` | Include Lv2 plugins | **ON**/OFF |
 | `WANT_SUIL` | Include SUIL for LV2 plugin UIs | **ON**/OFF |
 | `WANT_MP3LAME` | Include MP3/Lame support | **ON**/OFF |
 | `WANT_OGGVORBIS` | Include OGG/Vorbis support | **ON**/OFF |
