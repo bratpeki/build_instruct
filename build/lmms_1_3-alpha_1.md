@@ -4,7 +4,7 @@ This doc is subject to change so this is the summary of what it says:
 
 # Build system
 
-You must have `cmake` (>3.3.0) and `cmake-extra-modules`.
+You must have `cmake` (>3.3.0) and `extra-cmake-modules` (Installed via `pacman -S extra-cmake-modules`).
 
 # Compilers
 
