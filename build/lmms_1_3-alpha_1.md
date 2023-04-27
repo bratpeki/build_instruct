@@ -43,6 +43,9 @@ In the "Use" section, the things starting with `-D` are `cmake` flags.
 | | `libvorbis` | `pacman -S libvorbis` | OGG/Vorbis support, turned off with `-DWANT_OGGVORBIS=OFF` |
 | | `wine` | `pacman -S wine` | VST support, turned off with `-DWANT_VST=OFF -DWANT_VST_32=OFF -DWANT_VST_64=OFF` |
 
+`R` - Required<br>
+`*` - At least one required
+
 # CMake flags
 
 Default values (if known) are in italic.
@@ -81,9 +84,6 @@ Default values (if known) are in italic.
 | `CMAKE_BUILD_TYPE` | Build type, determines the performance | Release, Debug, RelWithDebInfo |
 | `PLUGIN_LIST` | Limit build only to the specified [plugins](./lmms_1_3-alpha_1.md#plugins) | ex. `"AudioFileProcessor Kicker TripleOscillator"` |
 | `LMMS_MINIMAL` | Similar to `PLUGIN_LIST`, although is keeps only the most essential plguins | *True* / False |
-
-`R` - Required<br>
-`*` - At least one required
 
 ## Plugins
 
