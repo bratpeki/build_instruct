@@ -147,8 +147,14 @@ You can use the actual folders as values, separated by spaces, case-insensitive.
 This is assuming we are in the `lmms` directory.
 
 ```sh
+git clone https://github.com/LMMS/lmms/
+cd lmms
+
+git submodule init
+
 mkdir build
 cd build
+
 cmake .. -DCMAKE_INSTALL_PREFIX=../target -DCMAKE_PREFIX_PATH=/usr/lib/wine
 make # you could specify the number of jobs at once, ex. make -j4
 make install # installs to the directory pointed to by CMAKE_INSTALL_PREFIX, you uninstall with make uninstall
