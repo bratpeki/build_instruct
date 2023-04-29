@@ -150,6 +150,7 @@ This is assuming we are in the `lmms` directory.
 git clone https://github.com/LMMS/lmms/
 cd lmms
 
+git checkout tags/1.3.0-alpha.1
 git submodule init
 
 mkdir build
