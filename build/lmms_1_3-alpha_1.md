@@ -144,8 +144,6 @@ You can use the actual folders as values, separated by spaces, case-insensitive.
 
 # My build setup
 
-This is assuming we are in the `lmms` directory.
-
 ```sh
 git clone https://github.com/LMMS/lmms/
 cd lmms
