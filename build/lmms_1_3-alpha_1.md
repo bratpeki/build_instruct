@@ -155,6 +155,11 @@ mkdir build
 cd build
 
 cmake .. -DCMAKE_INSTALL_PREFIX=../target -DCMAKE_PREFIX_PATH=/usr/lib/wine
-make # you could specify the number of jobs at once, ex. make -j4
-make install # installs to the directory pointed to by CMAKE_INSTALL_PREFIX, you uninstall with make uninstall
+
+# you could specify the number of jobs at once, ex. make -j4
+make
+
+# installs to the directory pointed to by CMAKE_INSTALL_PREFIX, you uninstall with make uninstall
+# we could run JUST this command, but it's good to separate them
+make install
 ```
