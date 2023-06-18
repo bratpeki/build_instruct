@@ -81,7 +81,7 @@ Default values (if known) are in italic.
 | `BUNDLE_QT_TRANSLATIONS` | Install Qt translation files for LMMS | ON / *OFF* |
 | `CMAKE_INSTALL_PREFIX` | Install location | Some path, commonly `../target` |
 | `CMAKE_PREFIX_PATH` | Location of needed libraries | Some path |
-| `CMAKE_BUILD_TYPE` | Build type, determines the performance | Release, Debug, RelWithDebInfo |
+| `CMAKE_BUILD_TYPE` | Build type, determines the performance | *Release*, Debug, RelWithDebInfo |
 | `PLUGIN_LIST` | Limit build only to the specified [plugins](./lmms_1_3-alpha_1.md#plugins) | ex. `"AudioFileProcessor Kicker TripleOscillator"` |
 | `LMMS_MINIMAL` | Similar to `PLUGIN_LIST`, although is keeps only the most essential plguins | *True* / False |
 
