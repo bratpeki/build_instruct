@@ -71,7 +71,7 @@ If I don't name the exact version of the program, consider getting any version r
 | R | `vamp-plugin-sdk` | | |
 | O | `harvid` | | Video timeline |
 | O | `libwebsockets` | | WebSockets control support |
-| O | `non-session-manager` | non-daw-git, new-session-manager | Session management |
+| O | `non-session-manager` | `non-daw-git`, `new-session-manager` | Session management |
 | O | `xjadeo` | | Video monitoring |
 
 `R` - Required<br>
