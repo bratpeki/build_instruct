@@ -100,3 +100,4 @@ sudo pacman -S \
 python waf configure --libjack=weak --ho-phone-home --optimize --with-backends=alsa,dummy,jack,pulseaudio
 python waf
 ```
+All the `WAF` commands are available under `python waf --help`.
