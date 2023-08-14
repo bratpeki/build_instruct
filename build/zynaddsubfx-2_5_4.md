@@ -80,7 +80,7 @@ fatal: unable to connect to github.com:
 github.com[0: ...]: errno=Operation timed out
 ```
 
-To fix this, run `git config --global url."https://".insteadOf git://` to fix the issue with the git port, which is usually restricted.
+To fix this, run `git config --global url."https://".insteadOf git://` to fix the issue with the Git port, which is usually restricted.
 
 ---
 
