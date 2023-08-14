@@ -14,12 +14,14 @@ The compilation then relies on `g++11`.
 
 The following libs are necessary:
 
-- `fftw` 3.x.x - necessary for Fast Fourier computations
+- `fftw` 3.x.x
 - `mxml` 2.5+
 - `zlib`
 - `JACK`
 
 `fltk` 1.x.x (tested with 1.3.8) is optional, but perferred.
+
+---
 
 As of recently (Aug 2023), `mxml`'s latest version is 3.3.1.
 Therefore, we will have to downgrade it in order to compile ZynAddSubFx 2.4.5.
