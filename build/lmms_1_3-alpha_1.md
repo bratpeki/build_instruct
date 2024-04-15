@@ -148,7 +148,7 @@ You can use the actual folders as values, separated by spaces, case-insensitive.
 git clone https://github.com/LMMS/lmms/
 cd lmms
 
-git checkout tags/1.3.0-alpha.1
+git checkout tags/v1.3.0-alpha.1
 git submodule init
 
 mkdir build
